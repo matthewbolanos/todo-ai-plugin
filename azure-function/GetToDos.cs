@@ -14,7 +14,7 @@ public class GetToDos
     private static readonly HttpClient httpClient = new HttpClient();
     
     [Function("GetToDos")]
-    [OpenApiOperation(operationId: "GetToDos", tags: new[] { "ExecuteFunction" }, Description = "Returns the current list of to do items in a JSON object")]
+    [OpenApiOperation(operationId: "GetToDos", tags: new[] { "ExecuteFunction" }, Description = "Gets the tasks of the current user. This function returns a string with a list of tasks in it.")]
     [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "text/plain", bodyType: typeof(TodoItem[]), Description = "Returns the list of todo items")]
     [OpenApiResponseWithBody(statusCode: HttpStatusCode.BadRequest, contentType: "text/plain", bodyType: typeof(string), Description = "Displays an error message")]
     public async Task<HttpResponseData> RunAsync([HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequestData req)
@@ -48,7 +48,7 @@ public class GetToDos
 
             // Set the response content and content type
             httpResponse.WriteString(tasksData);
-            httpResponse.Headers.Add("Content-Type", "application/json");
+            httpResponse.Headers.Add("Content-Type", "text/plain");
         }
         else
         {

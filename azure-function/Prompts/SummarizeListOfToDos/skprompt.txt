@@ -1,5 +1,6 @@
 [INSTRUCTIONS]
-Summarize the following tasks in 3-5 sentences.
+Summarize the following tasks in 3-5 sentences and call out what you think is most important to do first.
+Do not describe the structure of the tasks data, but rather the details of the tasks themselves.
 
 [TASKS]
 {{$input}}

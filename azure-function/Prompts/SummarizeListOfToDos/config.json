@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "description": "Provides a summary of a list of tasks that was returned by GetToDos so it can be shared with a user",
+  "description": "Provides a summary of tasks so it can be shared with a user in a human readable format.",
   "type": "completion",
   "completion": {
     "max_tokens": 1000,
@@ -13,7 +13,7 @@
     "parameters": [
       {
         "name": "input",
-        "description": "The available tasks to summarize",
+        "description": "A string that contains a list of tasks to summarize",
         "defaultValue": ""
       }
     ]
