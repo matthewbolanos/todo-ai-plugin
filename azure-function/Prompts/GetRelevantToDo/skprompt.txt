@@ -1,0 +1,12 @@
+[INSTRUCTIONS]
+Return back an array IDs of the tasks that match the given query.
+If no tasks match the query, return an empty array.
+Only return the ID, do not return the task itself.
+
+[TASKS]
+{{$input}}
+
+[QUERY]
+{{$search}}
+
+[ANSWER]

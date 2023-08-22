@@ -1,0 +1,7 @@
+[INSTRUCTIONS]
+Summarize the following tasks in 3-5 sentences.
+
+[TASKS]
+{{$input}}
+
+[Summary]
