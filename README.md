@@ -27,6 +27,13 @@ For Debugging the console application alone, we suggest using .NET [Secret Manag
 
 ### Using appsettings.json
 
+Add the ID of your list.
+
+1. Go to https://app-web-cuniu3csaexyy.azurewebsites.net
+1. Create a new list
+1. Copy the list ID from the URL
+1. Paste the list ID into the `listId` property
+
 Configure an OpenAI endpoint
 
 1. Copy [settings.json.openai-example](./config/appsettings.json.openai-example) to `./appsettings.json`
