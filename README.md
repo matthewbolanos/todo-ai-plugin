@@ -29,7 +29,7 @@ For Debugging the console application alone, we suggest using .NET [Secret Manag
 
 Add the ID of your list.
 
-1. Go to https://app-web-cuniu3csaexyy.azurewebsites.net
+1. Go to https://app-web-cuniu3csaexyy.azurewebsites.net (or your own instance of the [todo app](https://github.com/Azure-Samples/todo-csharp-cosmos-sql))
 1. Create a new list
 1. Copy the list ID from the URL
 1. Paste the list ID into the `listId` property

@@ -44,7 +44,7 @@ public class GetToDos
             var filteredToDos = toDos.Select(todo => new { todo.Id, todo.Name, todo.Description }).ToArray();
 
             // Create a string for the tasks data
-            string tasksData = "These are the current to dos: \n" + string.Join("\n\n", filteredToDos.Select(todo => $"ID: {todo.Id} \nName: {todo.Name} \nDescription: {todo.Description}"));
+            string tasksData = "These are the current to dos: \n" + string.Join("\n\n", filteredToDos.Select(todo => $"  ID: {todo.Id} \n  Name: {todo.Name} \n  Description: {todo.Description}"));
 
             // Set the response content and content type
             httpResponse.WriteString(tasksData);

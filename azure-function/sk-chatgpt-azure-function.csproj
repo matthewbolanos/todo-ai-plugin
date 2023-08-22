@@ -27,7 +27,7 @@
     <PackageReference Include="Microsoft.SemanticKernel" Version="0.19.230804.2-preview" />
   </ItemGroup>
 
-  <ItemGroup>
+  <!-- <ItemGroup>
     <ProjectReference Include="..\semantic-functions-generator\semantic-functions-generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
   </ItemGroup>
 
@@ -35,7 +35,7 @@
     <None Include="$(IntDir).generated\semantic-functions-generator\semantic-functions-generator.SemanticSkillGenerator\**">
       <Link>.generated\%(RecursiveDir)%(Filename)%(Extension)</Link>
     </None>
-  </ItemGroup>
+  </ItemGroup> -->
 
   <ItemGroup>
     <None Update="host.json">
