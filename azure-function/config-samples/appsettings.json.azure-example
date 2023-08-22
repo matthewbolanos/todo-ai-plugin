@@ -1,4 +1,5 @@
 {
+  "listId": "<Your List ID>",
   "kernel": {
     "serviceType": "AzureOpenAI",
     "serviceId": "gpt-35-turbo",

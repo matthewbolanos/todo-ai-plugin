@@ -1,4 +1,5 @@
 {
+  "listId": "<Your List ID>",
   "kernel": {
     "serviceType": "OpenAI",
     "serviceId": "gpt-3.5-turbo",
